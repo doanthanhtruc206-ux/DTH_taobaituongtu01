@@ -1,0 +1,11 @@
+{
+  "name": "MathGenius",
+  "description": "Ứng dụng trích xuất công thức toán từ ảnh và sinh bài tập tương tự với Gemini AI.",
+  "requestFramePermissions": [
+    "clipboard-read",
+    "clipboard-write"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
