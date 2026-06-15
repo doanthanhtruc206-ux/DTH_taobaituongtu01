@@ -20,3 +20,19 @@ export default defineConfig(() => {
     },
   };
 });
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    proxy: {
+      // Bất cứ request nào bắt đầu bằng /api trên frontend...
+      '/api': {
+        // ...sẽ được chuyển tới server Express của bạn
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+      },
+    },
+  },
+});
