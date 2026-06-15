@@ -1,4 +1,4 @@
-
+import 'katex/dist/katex.min.css';
 import MathProblemGenerator from './components/MathProblemGenerator';
 
 export default function App() {
